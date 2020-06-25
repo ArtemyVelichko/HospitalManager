@@ -1,0 +1,27 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawable="@drawable/animated_progressbar"
+    tools:ignore="MissingDefaultResource">
+
+    <target
+        android:name="path_1"
+        android:animation="@animator/animate_progressbar" />
+
+    <target
+        android:name="path_2"
+        android:animation="@animator/animate_progressbar" />
+
+    <target
+        android:name="path_3"
+        android:animation="@animator/animate_progressbar" />
+    <target
+        android:name="path_4"
+        android:animation="@animator/animate_progressbar" />
+    <target
+        android:name="path_5"
+        android:animation="@animator/animate_progressbar" />
+
+
+</animated-vector>
+
+

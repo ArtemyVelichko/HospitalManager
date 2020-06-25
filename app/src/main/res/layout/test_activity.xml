@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editpeople"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Здоровые люди"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editdeadpeople"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Мертвые "
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editsickpeople"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Больные"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editmoney"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="бабосы"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editdays"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="дни"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/growthpatient"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="коэффициент заболевания"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/growthdeadpatient"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="коэффициент смерти"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Нажми чтоб обновить" />
+
+
+</LinearLayout>

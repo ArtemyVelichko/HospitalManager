@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hospitalManager.emptymindgames.com">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_game"
+        android:label="Hospital Manager"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="hospitalManager.emptymindgames.com.Info_Activity"></activity>
+
+        <service android:name="hospitalManager.emptymindgames.com.Services.ServiceMusic" />
+
+        <activity
+            android:name="hospitalManager.emptymindgames.com.StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hospitalManager.emptymindgames.com.DoctorsActivity"
+            android:screenOrientation="portrait" /> <!-- <meta-data -->
+        <activity
+            android:name="hospitalManager.emptymindgames.com.MainActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

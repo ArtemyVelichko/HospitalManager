@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginEnd="10dp">
+
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/background_hospital"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@id/image_business"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.34" />
+
+        <ImageView
+            android:id="@+id/image_business"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.357" />
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            app:layout_constraintBottom_toBottomOf="@id/background"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintLeft_toRightOf="@id/image_business"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/background"
+            app:layout_constraintVertical_bias="0.4">
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+
+                android:progress="0"
+                android:progressDrawable="@drawable/custom_progress_bar"
+                app:layout_constraintBottom_toTopOf="@+id/price"
+                app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+                app:layout_constraintHorizontal_bias="0.5"
+
+                app:layout_constraintStart_toEndOf="parent" />
+
+<!--            android:src="@drawable/progress_bar_gif"-->
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/animated_image_on_progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/progressbargif"
+                app:layout_constraintBottom_toTopOf="@+id/price"
+                app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+                app:layout_constraintHorizontal_bias="0.5"
+
+                app:layout_constraintStart_toEndOf="parent" />
+
+
+
+            <TextView
+                android:id="@+id/text_view_on_progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:progress="0"
+                android:textColor="@color/dark"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/price"
+                app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/button_buy_mine"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@+id/price"
+                app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+                app:layout_constraintStart_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/amountofProduction"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="47dp"
+                android:background="@drawable/counter_hospital"
+                android:gravity="center"
+                app:layout_constraintEnd_toStartOf="@id/price"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="parent" />
+
+        </FrameLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/textViewamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintTop_toBottomOf="@+id/image_business"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/image_business"
+            app:layout_constraintStart_toStartOf="@id/image_business"
+            tools:layout_editor_absoluteX="28dp" />
+
+        <TextView
+            android:id="@+id/name_hospital"
+            android:layout_width="200dp"
+            android:layout_height="18dp"
+            android:textColor="@color/dark"
+            app:layout_constraintBottom_toTopOf="@id/frame_layout"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintLeft_toRightOf="@id/image_business"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
